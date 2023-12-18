@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.test {
+  width: 460px;
+  height: 275px;
+  margin-top: 205px;
+  margin-left: 140px;
+}
+/* .test img{
+  box-shadow: 0px 4px 50px 0px hsla(222, 68%, 4%, 0.1);
+} */
+body{
+  background-color: rgb(232, 240, 243);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.form {
+  width: 580px;
+  height: 679px;
+
+  border: 2px solid;
+  background: hsla(0, 0%, 100%, 1);
+  border: none;
+  box-shadow: 0px 4px 50px 0px hsla(222, 68%, 4%, 0.1);
+}
+
+.names {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: space-between;
+}
+.gens {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: space-between;
+}
+/* #first_name{
+  border: 2px solid #ccc;
+  border-color: lightblue;
+
+} */
+
+.caculate {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: space-between;
+}
+.activity,
+#main {
+  margin-left: 25px;
+}
+#first_name{
+
+  border-color: lightblue;
+}
+#gender {
+  width: 238px;
+  height: 48px;
+  border: 1px solid #ccc;
+}
+button {
+  width: 500px;
+  height: 48px;
+  margin-top: 20px;
+  margin-left: 8px;
+  border: 1px solid #ccc;
+  background-color: hsla(174, 62%, 47%, 1);
+  color: hsla(0, 0%, 100%, 1);
+}
+
+input,
+select {
+  width: 238px;
+  height: 48px;
+  line-height: 14px;
+  /* margin-top: 10px; */
+}
+label {
+  width: 238px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#activity {
+  width: 500px;
+  border: 1px solid #ccc;
+}
+#password {
+  width: 500px;
+  border: 1px solid;
+  border: 1px solid #ccc;
+  /* border-color: aliceblue; */
+}
+#first_name,
+#gender,
+#weight {
+  margin-left: 25px;
+  border: 1px solid #ccc;
+}
+#last_name,
+#DOB,
+#Height {
+  border: 1px solid #ccc;
+}
+
+#last_name:hover,
+#gender:hover,
+#DOB:hover,
+#weight:hover,
+#Height:hover,
+#activity:hover,
+#password:hover,
+button:hover {
+  border: 2px solid #ccc;
+  border-color: lightblue;
+}
+a {
+  text-decoration: none;
+}
+#Policy{
+  text-align: center;
+  font-size: 12px;
+}
+#anco{
+  color:hsla(174, 62%, 47%, 1);
+  text-decoration: underline;
+}
+::placeholder{
+  margin-left: 10px;
+}
+/* .show{
+  background-image:url(show.png);
+  background-size: cover;
+  background-position: right;
+  
+
+} */
+.eye{
+  position: relative;
+  top: -65px;
+  left: 500px;
+  right: 5px;
+}
+.vec{
+  position: relative;
+  left: -35px;
+  bottom: -5px;
+}
+::placeholder{
+  position: relative;
+  right: -10px;
+}
+
+/* this is for the responsiveness */
+
+@media (width < 600px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+  }
+  #test {
+    margin-top: 50px;
+    margin-left: 24px;
+  }
+
+  /* p{
+     margin-top: 50px;
+    margin-left: 24px;
+    } */
+
+
+  .test {
+    margin-left: 2px; 
+    margin-bottom:-290px  ;
+    /* width: 38.67px;
+        height: 40px; */
+  }
+  .first-p{
+    display: none;
+  } 
+
+   .test img {
+    margin-left: 20px;
+  }
+  .form {
+    width: 327px;
+    height: 870px;
+    margin-top: 286px;
+        margin-left: 24px;
+  }
+#first_name{
+  border-color: lightblue;
+}
+  .names,
+  .gens,
+  .caculate {
+    display: flex;
+    flex-direction: column;
+  }
+  #activity,
+  #password {
+    width: 295px;
+    height: 48px;
+    margin-left: -10px;
+  }
+  #last,
+  #dob,
+  #Height,
+  #weight {
+    margin-left: 15px;
+  }
+  #gender,
+  button {
+    width: 295px;
+    margin-left: 15px;
+  }
+  #first {
+    margin-left: -10px;
+  }
+
+  input,
+  select {
+    width: 295px;
+    height: 48px;
+  }
+ }
+ @media (width >= 600px){
+  .second-p{
+display: none;
+  }
+ }
+ 
